@@ -1,0 +1,382 @@
+/*
+0-767	   Телефоны		             	=> Рисовать 320 (iPhone 5s). Проверить на Nexus 6/5 (360)
+768-979	   Планшеты (вертик.)		=> Рисовать 768 (iPad вертикальный).	      => Сетка 
+		   Планшеты гориз
+1224-1680  Ноутбуки			            => Рисовать 1224 (Ноутбук 1280)		             => Сетка 1200
+1681-1920  Мониторы FullHD		        => Рисовать 1920 (Монитор FullHD) 	             => Сетка 1500
+*/
+
+
+
+@media screen and (max-width:1024px){
+    .col-1-6{
+        
+        width:66%;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .col-1-3{
+        width:33%;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    
+}
+@media screen and (max-width:1300px){
+    .team-slide ul{
+        padding: 0px 20px;
+    }
+    .team-slide .bx-next{
+        right:-10px;
+    }
+    .team-slide .bx-prev{
+        left:-10px;
+    }
+}
+@media screen and (min-width:1200px){
+    .container-fluid{
+         max-width: 1200px;   
+    }
+    .team-slide ul li img{
+        max-width: 90%;
+    }
+}
+@media screen and (min-width:1681px){
+    .container-fluid{
+         max-width: 1500px;      
+    }
+    .slider h1{
+        font-size: 80px;
+        line-height: 90px;
+    }
+    html,body, .slider, .content, .product,  {font-size: 18px;}
+    footer{font-size: 16px;}
+    .companymenu li a, .sub .desc{font-size: 16px; font-weight: 400;}
+    .slider p{
+        font-size: 24px;
+    }
+    
+}
+
+
+
+/*tablet style*/
+@media screen and (max-width:1024px){
+    .year-slider .tab-img{
+        width:130px;
+        height:130px;
+    }
+    .year-slider .tab-img .title{
+        font-size: 30px;
+        margin-top:50px;
+    }
+    .year-slider .tab-img .small{
+        margin-left:25px;
+        margin-top:45px;
+    }
+    .mobile-contacts{display: block;}
+    .content{
+        font-size: 15px;
+    }
+    .content h1{
+        font-size: 24px;
+    }
+    .slider h1{
+        font-size: 35px;
+        line-height: 40px;
+        padding-bottom: 0px;
+    }
+    
+}
+@media screen and (max-width:979px){
+    .content-tabs{
+        padding:0px 20px;
+        
+        
+    }
+    .content-tabs li{
+        list-style: none;
+        
+    }
+    .year-slider .tab-img{
+        width:95px;
+        height:95px;
+    }
+    .year-slider .tab-img .title{
+        left:0px;
+        color:#333;
+        top:50px;
+        text-shadow: none;
+        width:90px;
+        left:-7px;
+    }
+    .year-slider .tab-img .small{
+        font-size: 24px;
+    }
+    .year-tabs li{
+        padding-bottom: 50px;
+    }
+    .feature, .workwithus{
+        margin-top:40px;
+    }
+    .openmenu-description{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:800px){
+    nav > li > a{
+        padding: 15px 13px;
+    }
+}    
+/*mobile style*/
+
+@media screen and (max-width:767px){
+    .teamlead{
+        width:100%;
+    }
+    [class*="geotab"]{
+        padding: 0px;
+    }
+    .geotab2, .geotab3{
+        display: none;
+    }
+    .geo-tab2-mobile , .geo-tab3-mobile{
+        display: block;
+    }
+    .product-tabs, .product-tabs ul{
+        width:100%;
+        left:0px;
+        right:0px;
+        padding:0px;
+        font-size: 14px;
+    }
+    .product-tabs ul li{
+    width:20%;
+        
+    }
+    .about-product .image-left, .about-product .image-right{
+        text-align: center;
+    }
+    .about-product .image-left img, .about-product .image-right img{
+    max-width: 100%;
+        padding: 0px;
+}
+    .geo-tabs li{
+        font-size: 14px;
+    }
+    
+    .comment .text{
+    float:none;
+}
+    .image-left h1,.image-left h2,.image-left h3,.image-left h4,.image-left .text , .image-right h1,.image-right h2,.image-right h3,.image-right h4,.image-right .text{
+        float:left;
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 10px;
+        
+    }
+  
+    .image-left > img, .image-right > img{
+        float: left;
+        max-width: 100%;
+        padding-bottom: 10px;
+    }
+    .mobile-slider{
+        display: block;
+        float:left;
+        float:left;
+        width:100%;
+    }
+    .mobile-slider h1{
+        padding:20px 0px;
+    }
+    .tabs{
+        margin-top:40px;
+    }
+    .tabs i{
+        line-height: 1em;
+    }
+    
+    .year-slider{
+        display: none;
+    }
+    body{
+        font-size: 15px !important;
+    }
+    .footersub{
+        padding-top:10px;
+        padding-bottom: 20px;
+    }
+    .product{
+        text-align: left;
+    }
+    .product .logo{
+        text-align: center;
+        
+    }
+   
+    .slider{
+        float:left;
+        position: relative;
+    }
+    .withslider{
+        height: auto;
+        padding-bottom: 20px;
+        min-height: 100%;
+        
+    }
+    body{
+        font-size: 14px;
+    }
+    .body .row{
+        padding-top:30px;
+        padding-bottom: 30px;
+        
+    }
+    
+    [class*="col"],[class^=" col"]{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    .about-footer{
+        border:none;
+    }
+h1{
+        font-size: 24px;
+        padding:0px;
+        padding-bottom:15px
+    }
+    nav > li > a{
+        font-size: 0.8em;
+    }
+    .slider h1{
+        font-size: 32px;
+        line-height: 32px;
+        padding-bottom: 20px;
+        
+    }
+    .slider .redbutton, .slider .littledesc{
+        margin-top: 20px;
+    }
+    .slider .littledesc{
+        color:white;
+        width:46%;
+        
+    }
+    .work{
+        text-align: left;
+    }
+    .work h2{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .workwithus{
+        margin-bottom: 30px;
+    }
+    .workwithus > a{
+        text-align: left;
+    }
+    .slider .littledesc a{
+        color:white;
+    }
+    nav{
+        padding: 0px;
+        width: 100%;
+        float:left;
+        position: absolute;
+        left:0px;
+    }
+    .job ul li a{
+        padding:6px 0px;
+    }
+    .workwithus a{
+        padding:0px;
+        
+    }
+    .workwithus .icon-down-arrow{
+        width:100%;
+        float:left;
+        text-align: center;
+    }
+    .work .link{
+        padding-left: 0px;
+    }
+    nav >li {
+        width:33.3333%;
+        text-align: center;
+    }
+    nav >li a{
+        width:100%;
+        padding: 10px 0px;
+        
+    }
+    .mobilehide{
+        display: none;
+    }
+    header .logo{
+        width:100%;
+        text-align: center;
+    }
+    header .logo i{
+        margin-left:-120px;
+    }
+    nav{
+        margin:0px auto;
+        position: absolute;
+        text-align: center;
+        top:60px
+    }
+    .companymenu li:nth-child(1), .companymenu li:nth-child(3){
+        border-right:1px solid rgba(153, 153, 153, 0.2);
+    
+    }
+    .callus{
+        border-right:1px solid rgba(153, 153, 153, 0.2);;
+    }
+    nav > li a{
+        font-size: 16px;
+    }
+    nav li a{
+        text-align: center;
+    }
+    .info-simtech{
+        border:none;
+        margin-bottom: 30px;
+    }
+    .info{
+        border:none;
+    }
+
+}
+@media screen and (max-width:450px){
+    .geo-tabs li{
+        font-size: 12px;
+    }
+    .geo-tabs li span{
+        padding: 10px 5px;
+    }
+    .whitebutton{
+        width:90%;
+        padding:15px 0px ;
+        
+    }
+    .product-tabs ul{
+        padding: 0px 40px;
+    }
+    .product-tabs ul li{
+    width:50%;
+        padding-bottom: 20px;
+    }
+    .product-tabs ul li:last-child{
+    width:100%;
+    }
+    .slider{
+        margin-top:40px;
+    }
+    .slider h1{
+        
+        font-size: 28px;
+        margin:0px;
+        padding: 0px;
+    }
+}

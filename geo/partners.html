@@ -1,0 +1,136 @@
+<div class="geotab3">
+    <img src="geo/tab3/logo.png" alt="">
+</div>
+<div class="geo-tab3-mobile">
+    <div class="map">
+       <div class="circle martfox selectedcircle"></div>
+       <div class="circle quinarx"></div>
+       <div class="circle larrytech"></div>
+       <div class="circle emporio"></div>
+       <div class="circle infinity"></div>
+       <div class="circle cart"></div>
+       <div class="circle ya"></div>
+       <div class="circle esm"></div>
+       <div class="circle forgman"></div>
+       <div class="circle magicdust"></div>
+       <div class="circle ecommerce"></div>
+        <img src="geo/tab2/map.png" alt="">
+    </div>
+    <ul class="commentList">
+        <li id="martfox">
+            <div class="partner">
+                <img src="geo/tab3/martfox.png" alt="">
+                <span>
+                США
+                </span>
+            </div>
+        </li>
+        <li id="quinarx">
+            <div class="partner">
+                <img src="geo/tab3/Quinarx.png" alt="">
+                <span>
+                Нидерланды
+                </span>
+            </div>
+        </li>
+        <li id="larrytech">
+            <div class="partner">
+                <img src="geo/tab3/larrytech.png" alt="">
+                <span>
+                Великобритания
+                </span>
+            </div>
+        </li>
+        <li id="emporio">
+            <div class="partner">
+                <img src="geo/tab3/e-emporio.png" alt="">
+                <span>
+                Греция
+                </span>
+            </div>
+        </li>
+        <li id="infinity">
+            <div class="partner">
+                <img src="geo/tab3/blue-infinity.png" alt="">
+                <span>
+                Швейцария
+                </span>
+            </div>
+        </li>
+        <li id="cart">
+            <div class="partner">
+                <img src="geo/tab3/cs-cart.png" alt="">
+                <span>
+                Турция
+                </span>
+            </div>
+        </li>
+        <li id="ya">
+            <div class="partner">
+                <img src="geo/tab3/ya.png" alt="">
+                <span>
+                Россия
+                </span>
+            </div>
+        </li>
+        <li id="esm">
+            <div class="partner">
+                <img src="geo/tab3/esm.png" alt="">
+                <span>
+                Корея
+                </span>
+            </div>
+        </li>
+        <li id="forgman">
+            <div class="partner">
+                <img src="geo/tab3/forgman.png" alt="">
+                <span>
+                Япония
+                </span>
+            </div>
+        </li>
+        <li id="magicdust">
+            <div class="partner">
+                <img src="geo/tab3/magicdust.png" alt="">
+                <span>
+                Австралия
+                </span>
+            </div>
+        </li>
+        <li id="ecommerce">
+            <div class="partner">
+                <img src="geo/tab3/ecommerce.png" alt="">
+                <span>
+                Австралия
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+ 
+    $('.commentList').owlCarousel({
+            singleItem:true,
+            autoHeight:true,
+            navigation : true,
+            navigationText : ['<i class="prev icon-left-arrow"></i>','<i class="next icon-right-arrow"></i>'],
+             rewindNav : true,
+            pagination:false,
+            slideSpeed : 500,
+            paginationSpeed : 800,
+            rewindSpeed : 500,scrollPerPage : false,
+            afterMove: nextSliderCircle,
+            addClassActive:true,
+
+    });
+    var owl = $('.commentList').data('owlCarousel');
+    $('.map').click(function(){
+        owl.next();
+    });
+
+    function nextSliderCircle(){
+        $('.map .circle').removeClass('selectedcircle');
+        $('.map .'+$('.active > li').attr('id')).addClass('selectedcircle');
+    }
+</script>
