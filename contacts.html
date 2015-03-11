@@ -7,11 +7,14 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/retina.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full" data-id="dgLoader"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/easing.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/about.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/about.js"></script> 
+    <script src="js/contacts.js"></script>
+
     
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/owl.carousel.css">
@@ -25,15 +28,15 @@
     <!--[if IE 7]><link rel="stylesheet" href="styles/simtechicons-ie7.css"><![endif]-->
 </head>
 <body>
-
-   <header> 
-      <div class="mobile-contacts">
+  
+   <header>
+      <div class="mobile-contacts light-contacts">
           <div class="information">
-              <a href="tel:(8422) 52-66-97" class="a-white">(8422) 52-66-97<i class="icon-right-arrow"></i></a>
+              <a href="tel:(8422) 52-66-97" class="a-white">(8422) 52-66-97&nbsp;<i class="icon-right-arrow"></i></a>
           </div>
           <div class="information">
               <a href="#" class="a-white"> Как к нам проехать?&nbsp;<i class="icon-right-arrow"></i></a>
-
+              
           </div>
       </div>
        <div  class="container-fluid light-menu">
@@ -331,160 +334,15 @@ Merchium — бесплатный облачный сервис для созд�
 
          </div>
    </header>
-   <div class="body tabs">
-          <div class="container-fluid ">
-              <div class="row ">
-                 <div class="col-md-4 col-sm-5"></div>
-                  <div class=" col-md-8 col-sm-8">
-                      <a href="about.html" class="col-md-5 col-xs-5 ">
-                          <i class="icon-info"></i><br>
-                          О «Симтек»
-                      </a>
-                      <a href="geo.html" class="col-md-6 col-xs-6 selected">
-                          <i class="icon-globus"></i><br>
-                          География и клиенты
-                      </a>
-                      <a href="team.html" class="col-md-5 col-xs-5">
-                          <i class="icon-team"></i><br>
-                          Команда
-                      </a>
-                  </div>
-              </div>
-          </div>
-   </div>
-   <div class="body">
-       <div class="container-fluid">
-           <div class="row" style="padding-bottom:0px;">
-               <h1>Мы работаем c 170 странами мира</h1>
-               <div class="subtext">
-                   А это 89% замного шара
-               </div>
-               <div class="col-md-16">
-                  <div class="geo-tabs">
-                   <ul>
-                       <li>
-                           <span class="a-dark t-h-none geoactiveusers" id="geo/activeusers.html" href="#">Активные пользователи</span>
-                       </li>
-                       <li>
-                           <span class="a-dark t-h-none geoclients"     id="geo/clients.html"     href="#">Клиенты</span>
-                       </li>
-                       <li>
-                           <span class="a-dark t-h-none geopartners"    id="geo/partners.html"    href="#">Партнеры</span>
-                       </li>
-                   </ul>
-                   </div>
-               </div>
-               
-            </div> 
-            <div class="row geo-row">
-                <div class="geo-module col-md-16">
-                   <div class="geotab1">
-<img src="geo/tab1/map.png" alt="">
-<h4>Топ 10 стран + Россия</h4>
-<div class="col-md-2 col-sm-16 col-xs-16"></div>
-<div class="col-md-12 col-sm-16 col-xs-16 content countries">
-    <div class="col-md-4 col-sm-4 col-xs-16">
-           <div class="col-md-16 col-sm-16 col-xs-16">
-               <h4 class="a-red t-h-non">31,3%</h4>США
-           </div>
-            <div class="col-md-16 col-sm-16 col-xs-16">
-                <h4 class="a-red t-h-non">10,0%</h4>Австралия
-            </div>
-            <div class="col-md-16 col-sm-16 col-xs-16">
-                <h4 class="a-red t-h-non">8,9%</h4>Великобритания
-            </div>
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-16">
-           <div class="col-md-16 col-sm-16 col-xs-16">
-               <h4 class="a-red t-h-non">7,9%</h4>Греция
-           </div>
-            <div class="col-md-16 col-sm-16 col-xs-16">
-                <h4 class="a-red t-h-non">3,8%</h4>Нидерланды
-            </div>
-            <div class="col-md-16 col-sm-16 col-xs-16">
-                <h4 class="a-red t-h-non">3,4%</h4>Турция
-            </div>
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-16">
-           <div class="col-md-16 col-sm-16 col-xs-16">
-               <h4 class="a-red t-h-non">3,0%</h4>Канада
-           </div>
-            <div class="col-md-16 col-sm-16 col-xs-16">
-                <h4 class="a-red t-h-non">2,3%</h4>Румыния
-            </div>
-            <div class="col-md-16 col-sm-16 col-xs-16">
-                <h4 class="a-red t-h-non">2,0%</h4>Япония
-            </div>
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-168">
-           <div class="col-md-16 col-sm-16 col-xs-16">
-               <h4 class="a-red t-h-non">1,8%</h4>Италия
-           </div>
-            <div class="col-md-16 col-sm-16 col-xs-16">
-                <h4 class="a-red t-h-non">1,1%</h4>Россия
-            </div>
-            
-    </div>
-</div>
-</div>
-
-
-               </div>
-            </div>  
-           <div class="row">
-               <div class="col-md-16 ourclients">
-                   <h1>Наши клиенты</h1>
-                   <div class="col-md-16">
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/northskull.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/babyauth.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/eliteak.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/ownta.png" alt=""></a>
-                   </div><div class="col-md-16">
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/memento.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/saatva.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/chiccham.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/supvil.png" alt=""></a>
-                   </div><div class="col-md-16">
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/winfield.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/letro.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/watchsport.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/lothantique.png" alt=""></a>
-                   </div><div class="col-md-16">
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/collenandclart.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/bridgat.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/ambient.png" alt=""></a>
-                   <a href="" class="col-md-4 col-sm-8 col-xs-16"><img src="geo/logo/incikolye.png" alt=""></a>
-                   </div>
-                   
-               </div>
-           </div>
-           <div class="row whatnext">
-               <div class="col-md-16 ">
-                   <a href="team.html" class="whitebutton a-dark t-h-none">
-                       Что дальше? &nbsp;&nbsp;<span class="a-red">Команда <i class="icon-right-arrow"></i></span>
-                   </a>
-               </div>
-           </div>
-       </div>
-   </div>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+ 
+   <div id="map" class="contactsMap"></div>
    
    
    
    
    
 <!--###############################   F###ER!!!!##############################-->
-   <footer>
+  <footer>
         <div class="container-fluid">
             <div class="row">
                    <div class="col-md-9 col-sm-16">
@@ -567,5 +425,6 @@ Merchium — бесплатный облачный сервис для созд�
         </div>
       </div>
    </footer><script>$('nav').attr('style','display:block;');</script>
+   
 </body>
-</html>
+</html>    

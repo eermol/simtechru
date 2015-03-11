@@ -58,6 +58,7 @@ $('document').ready(function() {
         $('.content-tabs').animate({height: tabH},300);
     });
     
+    
 });
 
 function jobsDown(){    
@@ -71,4 +72,4 @@ function jobsDown(){
         $('.job ul').animate({top:"-=35"},300);
     }
     
-}
+} 
