@@ -55,7 +55,7 @@ a:focus{text-decoration: none;}
     text-decoration: underline;
 }
 .slider .redbutton{
-    padding: 15px 25px;
+    padding: 20px 32px;
 }
 .redbutton:hover{
     color:white;
