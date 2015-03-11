@@ -58,6 +58,7 @@
     float:left;
     width:100%;
     padding:30px 0px;
+    color: #999999;
 }
 .about-product .links a{
     padding:0px 10px;
@@ -127,7 +128,7 @@
     padding-bottom: 50px;
 }
 .product-features .feature img{
-    padding:3px
+    padding:14px
 }
 .product-features .ps{
     color: #a6a6a6;
