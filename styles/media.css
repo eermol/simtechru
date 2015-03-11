@@ -217,7 +217,7 @@
    
     .slider{
         float:left;
-        position: relative;
+        bottom: 10%;
     }
     .withslider{
         height: auto;
