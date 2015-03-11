@@ -9,7 +9,7 @@
 }
 .tabs a {
     color:#333;
-    
+
 }
 .tabs a i{
     color:#333333;
@@ -435,13 +435,18 @@ box-shadow: 0px 0px 0px 2px rgba(223,71,76,1);
     padding:10px 0px;
 }
 .boss .bx-next, .boss .bx-prev, .team-slide .bx-next, .team-slide .bx-prev {
+
     top:50%;
-    margin-top:-20px;
+    margin-top:-25px;
+}
+.boss .bx-next, .boss .bx-prev{
+    font-size: 25px;
 }
 .team-slide{
     float:left;
     width:100%;
     position: relative;
+    margin-top:20px;
 }
 .team-slide ul{
     padding:0px;
@@ -729,3 +734,7 @@ box-shadow: 0px 0px 0px 2px rgba(223,71,76,1);
 
 
 
+
+.boss {
+    margin:0px;
+}

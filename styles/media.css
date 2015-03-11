@@ -125,7 +125,7 @@
 }
 @media screen and (max-width:800px){
     nav > li > a{
-        padding: 15px 13px;
+        padding: 17px 13px;
     }
 }    
 /*mobile style*/
@@ -345,6 +345,7 @@ h1{
     }
     .info{
         border:none;
+        height: auto;
     }
 
 }

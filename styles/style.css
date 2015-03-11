@@ -88,7 +88,9 @@ nav > li{
 nav > li a i{ display: none;}
 nav > li > a{
     float: left;
-    padding: 15px 20px;
+    padding: 12px 20px;
+    margin-top:6px;
+
     font-size: 18px;
 }
 
@@ -98,12 +100,16 @@ nav a i{
 
 
 header .social{
+    margin-top:12px;
     float: right;
 }
 
+
+
+
 header .social i{
     font-size: 30px;
-    padding-top: 10px;
+
     float:left;
 }
 
@@ -117,9 +123,9 @@ header .social i{
     margin-top:55px;
     border-top:5px solid #dc2430;
     left:0px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
--moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
     height: 540px;
     background-color:white;
     overflow: hidden;
@@ -352,7 +358,7 @@ footer {
 }
 
 footer .about-footer {
-    border-right:1px solid rgba(153, 153, 153, 0.2);
+
     margin-bottom: 40px;
     padding-top:30px;
     text-align: center;
@@ -367,7 +373,6 @@ footer .about-footer i.icon-simtech{
 }
 footer .bold{
     font-weight: 700;
-    font-size: 13px;
     color: #999999;
 }
 footer h2{
@@ -379,12 +384,11 @@ footer h2{
 }
 .info{
     text-align: center;
-    border-right:1px solid rgba(153, 153, 153, 0.2);
-    padding-bottom: 30px;
+    border-left:1px solid rgba(153, 153, 153, 0.2);
+    height: 200px;
+
 }
-.info:last-child{
-    border:none;
-}
+
 
 .info .bold{
     color:#333;
@@ -551,4 +555,15 @@ nav li:hover > a.selected {
     float:left;
     width:100%;
     padding:0px 15px;
+}
+
+
+
+.workfun {
+    margin-top: 0.5em;
+    display: inline-block;
+}
+
+.talk {
+    border-left:none;
 }
