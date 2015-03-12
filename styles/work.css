@@ -84,3 +84,89 @@ input.phone{
     width:58%;
     float: left;
 }
+.send-mail .loadfile input[type="file"]{
+    position: absolute;
+    opacity: 0;
+    top:0px;
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+}
+.send-mail .loadfile{
+    cursor: pointer;
+    float:left;
+    height: 30px;
+}
+.send-mail .redbutton{
+    margin-top:20px;
+    padding:18px 32px;
+    display: inline-block;
+    float: none;
+}
+.send-mail .error{
+    height: 30px;
+    font-size: 14px;
+    display: none;
+    float:right;
+}
+.send-mail .visible{
+    display: block;
+}
+.send-mail .error i{
+    font-size: 0.7em;
+    margin-top:-5px;
+}
+.teamlead {
+    width:50%;
+    overflow: hidden;
+    height: 280px;
+    text-align: center;
+    position: relative;
+}
+.teamlead img{
+    position: absolute;
+    left:50%;
+    margin-left:-380px;
+    max-width: none !important;
+    float:none;
+
+}
+.margin-bot{
+    margin-bottom: 60px;
+}
+.whatnext{
+    text-align: center;
+}
+.selectedfile i{
+    color: #a6a6a6;
+    font-size: 10px;
+}
+
+.filesize {
+    color: #a6a6a6;
+
+}
+
+.selectedfile{
+    display: none;
+    line-height: 2em;
+    height: 30px;
+    float:left;
+}
+.selectedfile i{
+    cursor: pointer;
+}
+.selectedfile img{
+    margin-top:-5px;
+    width: 18px;
+    height: 22px;
+}
+
+.deletefile {
+    display: none;
+    font-size: 10px;
+    color: #a6a6a6;
+    cursor: pointer;
+    padding:10px 0px;
+    float:left;
+}

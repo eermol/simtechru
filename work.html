@@ -10,6 +10,7 @@
     <script src="js/easing.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/work.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/contentstyle.css">
@@ -406,39 +407,8 @@ Merchium — бесплатный облачный сервис для созд�
                            <span class="a-red">Подробнее<i class="icon-right-arrow"></i></span>
                         </a>
                    </li>
-                   <li>
-                        <a href="#">
-                           <div class="vacancy-img"></div>
-                           <h2>Веб-дизайнер</h2>
-                           <div class="price">20 000 руб.</div>
-                           <div class="text">
-                           Мы немного расширяем команду, поэтому продолжаем поиски UI/UX-дизайнера интерфейсов для веб- и мобильных проектов.
-                           </div>
-                           <span class="a-red">Подробнее<i class="icon-right-arrow"></i></span>
-                        </a>
-                   </li>
-                   <li>
-                        <a href="#">
-                           <div class="vacancy-img"></div>
-                           <h2>Веб-дизайнер</h2>
-                           <div class="price">20 000 руб.</div>
-                           <div class="text">
-                           Мы немного расширяем команду, поэтому продолжаем поиски UI/UX-дизайнера интерфейсов для веб- и мобильных проектов.
-                           </div>
-                           <span class="a-red">Подробнее<i class="icon-right-arrow"></i></span>
-                        </a>
-                   </li>
-                   <li>
-                        <a href="#">
-                           <div class="vacancy-img"></div>
-                           <h2>Веб-дизайнер</h2>
-                           <div class="price">20 000 руб.</div>
-                           <div class="text">
-                           Мы немного расширяем команду, поэтому продолжаем поиски UI/UX-дизайнера интерфейсов для веб- и мобильных проектов.
-                           </div>
-                           <span class="a-red">Подробнее<i class="icon-right-arrow"></i></span>
-                        </a>
-                   </li>
+
+
                </ul>
             </div>
         </div>
@@ -446,24 +416,60 @@ Merchium — бесплатный облачный сервис для созд�
     <div class="body gray">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-1"></div>
-                <div class="col-md-10 col-sm-10 col-xs-14">
+                <div class="col-md-3 col-sm-2"></div>
+                <div class="col-md-10 col-sm-12 col-xs-16">
                     <h1>Не нашли подходящую вакансию?</h1>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-12">
+                    <div class="col-md-2 col-sm-1"></div>
+                    <div class="col-md-12 col-sm-16 col-xs-16">
                         Возможно, вы станете отправной точкой  нового проекта компании. Напишите нам короткий рассказ о себе на почту <a href="#" class="a-red">job@simtech.ru</a> или заполните форму ниже.
-                    <form action="#" class="send-mail">
-                        <input type="text" placeholder="Ваше Имя и Фамилия" pattern="[A-Za-zА-Яа-яЁё]" name="name" class="col-md-16">
-                        <textarea name="message" placeholder="Напишите, почему нам стоит выбрать вас?" class="col-md-16" id="" cols="30" rows="10"></textarea>
-                    </form>
-                    <input type="text" placeholder="Ваш e-mail" class="mail">
-                    <input type="text" placeholder="Ваш телефон" class="phone">
+                        <form action="#" class="send-mail">
+                            <input type="text" placeholder="Ваше Имя и Фамилия" pattern="[A-Za-zА-Яа-яЁё]" name="name" class="col-md-16 col-sm-16 col-xs-16">
+                            <textarea name="message" placeholder="Напишите, почему нам стоит выбрать вас?" class="col-md-16  col-sm-16 col-xs-16" id="" cols="30" rows="10"></textarea>
+                            <input type="text" placeholder="Ваш e-mail" class="mail">
+                            <input type="text" placeholder="Ваш телефон" class="phone">
 
+                            <span class="loadfile a-red t-h-none">
+                                <input type="file">
+                                <span><i class="icon-clip"></i> Загрузить резюме</span>
 
+                            </span>
+                            <span class="error"><i class="icon-info"></i> Извините, файл должен быть меньше 20 МБ</span>
+                            <span class="selectedfile"></span><i class="icon-close deletefile"></i><br><br>
+                            <div class="col-md-16 col-sm-16 col-xs-16" style="text-align:center;">
+                                <input type="button" class="redbutton" value="Отправить резюме">
+                            </div>
+                        </form>
                     </div>
 
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="container-fluid">
+            <div class="row">
+               <h1>Вы студент?</h1>
+                <div class="col-md-16 margin-bot image-left">
+                    <h4>Наша компания приглашает студентов и выпускников вузов на стажировку по веб-программированию</h4>
+                    <div class="teamlead">
+                        <img src="work/areyoustudent.png" alt="">
+                    </div>
+                    <div class="text">
+                    График и нагрузка стажировки определяются с каждым индивидуально с учетом учебного расписания. Во время стажировки вы будете работать сначала над учебными, а после — над коммерческими проектами. Вы будете обучаться и совершенствовать свои навыки под наставничеством наших ведущих специалистов. Если вы проявите себя, то, вполне возможно, что после завершения стажировки мы пригласим вас на постоянную работу.
+                    <br><br>
+                    <a href="#" class="a-red">Узнать больше про стажировку <i class="icon-right-arrow"></i></a>
+                    </div>
+
+
+
+                </div>
+            <div class="col-md-16 whatnext">
+                   <a href="team.html" class="whitebutton a-dark t-h-none">
+                       Что дальше? &nbsp;&nbsp;<span class="a-red">Стажировка <i class="icon-right-arrow"></i></span>
+                   </a>
+            </div>
+            </div>
+
         </div>
     </div>
    <footer>

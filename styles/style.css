@@ -558,7 +558,12 @@ nav li:hover > a.selected {
     padding:0px 15px;
 }
 
-
+.image-left .teamlead{
+    float:right;
+}
+.image-right .teamlead{
+    float:left;
+}
 
 .workfun {
     margin-top: 0.5em;

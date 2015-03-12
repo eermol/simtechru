@@ -89,6 +89,9 @@
     
 }
 @media screen and (max-width:979px){
+    .vacancy li{
+        width:46%;
+    }
     .info{
         border:0px;
         margin-left:6.25%;
@@ -135,7 +138,14 @@
 /*mobile style*/
 
 @media screen and (max-width:767px){
-
+    .send-mail .mail, .send-mail .phone{
+        width:100%;
+    }
+.vacancy li{
+    width:100%;
+    margin:0px;
+    margin-top:40px;
+    }
     .tabs {
         font-size: 16px;
     }
