@@ -57,7 +57,7 @@ $('document').ready(function() {
         var tabH = $('.'+$(this).attr('id')).height();
         $('.content-tabs').animate({height: tabH},300);
     });
-    
+
     
 });
 

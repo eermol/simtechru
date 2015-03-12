@@ -1,0 +1,86 @@
+.tabs {
+    text-align: center;
+    border-bottom:1px solid #d6d6d6;
+    font-size: 18px;
+}
+.tabs .row{
+    padding-top:60px;
+    padding-bottom: 30px;
+
+}
+.tabs a {
+    color:#333;
+
+}
+.tabs a i{
+    color:#333333;
+    font-size: 26px;
+    line-height: 2em;
+}
+.tabs a.selected,.tabs a.selected i{
+    color: #dc2430;
+}
+.vacancy {
+    text-align: center;
+    width:100%;
+    padding: 0px;
+    margin-top:15px;
+    float:left;
+
+}
+.vacancy li{
+    vertical-align: top;
+    display: inline-block;
+    float:none;
+    width:22%;
+    text-align: center;
+    margin:0px 15px;
+    padding: 0px;
+    margin-top: 60px;
+}
+.vacancy li:hover .a-red{
+    text-decoration: underline;
+}
+.vacancy .vacancy-img{
+    width:170px;
+    height: 170px;
+    display: inline-block;
+    background-color:#54a99c;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.vacancy h2{
+    float: left;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    line-height: 1em;
+    padding-top:35px;
+    padding-bottom: 10px;
+    color: #333333;
+
+}
+.vacancy .price{
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: #808080;
+    float: left;
+    width: 100%;
+}
+.vacancy .text{
+    color: #333333;
+}
+.send-mail{
+    margin-top: 20px;
+}
+input.mail{
+    width:40%;
+    float: left;
+    margin-right: 2%;
+}
+input.phone{
+    width:58%;
+    float: left;
+}
