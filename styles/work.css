@@ -235,3 +235,14 @@ input.phone{
 .bx-prev{
     left:-10px;
 }
+
+.send-to-friend {
+    float:left;
+    padding:10px 15px;
+    padding-right: 0px;
+    cursor: pointer;
+}
+
+.job-links {
+    font-size: 14px;
+}
