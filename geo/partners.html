@@ -110,7 +110,7 @@
 
 <script>
  
-    $('.commentList').owlCarousel({
+    jQuery('.commentList').owlCarousel({
             singleItem:true,
             autoHeight:true,
             navigation : true,
@@ -124,13 +124,13 @@
             addClassActive:true,
 
     });
-    var owl = $('.commentList').data('owlCarousel');
-    $('.map').click(function(){
+    var owl = jQuery('.commentList').data('owlCarousel');
+    jQuery('.map').click(function(){
         owl.next();
     });
 
     function nextSliderCircle(){
-        $('.map .circle').removeClass('selectedcircle');
-        $('.map .'+$('.active > li').attr('id')).addClass('selectedcircle');
+        jQuery('.map .circle').removeClass('selectedcircle');
+        jQuery('.map .'+jQuery('.active > li').attr('id')).addClass('selectedcircle');
     }
 </script>

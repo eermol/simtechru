@@ -92,8 +92,10 @@ a:focus{text-decoration: none;}
     font-size: 40px !important;
 }
 
-.content p {
+p {
     line-height: 24px;
+    margin:0px;
+    padding-bottom: 0.5em;
 }
 input, textarea{
     display: block;

@@ -1,16 +1,16 @@
 function loadmodule(moduleFileName){
-    $('.geo-module').load(moduleFileName, function(responseText, textStatus, XMLHttpRequest){
-            $(".geo-module").animate({ height: 'auto' }, 1000);
-        $.ajaxSetup({cache: false});
+    jQuery('.geo-module').load(moduleFileName, function(responseText, textStatus, XMLHttpRequest){
+            jQuery(".geo-module").animate({ height: 'auto' }, 1000);
+        jQuery.ajaxSetup({cache: false});
     });
         
 }
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
     
-    $('.geoactiveusers').addClass('selected');
+    jQuery('.geoactiveusers').addClass('selected');
     
-    $(".mobile").owlCarousel({
+    jQuery(".mobile").owlCarousel({
             singleItem:true,
             autoHeight:true,
             navigation : true,
@@ -22,7 +22,7 @@ $(document).ready(function(){
             rewindSpeed : 500,scrollPerPage : false,
 
     });
-    $(".boss").owlCarousel({
+    jQuery(".boss").owlCarousel({
             singleItem:true,
             autoHeight:true,
             navigation : true,
@@ -34,7 +34,7 @@ $(document).ready(function(){
             rewindSpeed : 500,scrollPerPage : false,
 
     });
-        $(".events").owlCarousel({
+        jQuery(".events").owlCarousel({
             itemsDesktop:[2000,4],
             itemsTablet:[768,2],
             itemsMobile:[767,1],
@@ -47,7 +47,7 @@ $(document).ready(function(){
             rewindSpeed : 500,scrollPerPage : false,
 
          });
-     $(".team-slide ul").owlCarousel({
+     jQuery(".team-slide ul").owlCarousel({
             itemsDesktop:[2000,7],
             itemsDesktopSmall:[1300,6],
             itemsTablet:[1150,4],
@@ -64,10 +64,10 @@ $(document).ready(function(){
      });
     
     
-    $('.geo-tabs span').click(function(){
-        $('.geo-tabs span').removeClass('selected');
-        $(this).addClass('selected');
-        var moduleattr = $(this).attr('id');
+    jQuery('.geo-tabs span').click(function(){
+        jQuery('.geo-tabs span').removeClass('selected');
+        jQuery(this).addClass('selected');
+        var moduleattr = jQuery(this).attr('id');
         loadmodule(moduleattr);
     });
     

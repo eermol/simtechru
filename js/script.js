@@ -1,75 +1,75 @@
-$('document').ready(function() {
+jQuery('document').ready(function() {
     
-    $('.content-tabs').height($('.content-tabs > .selected').height()); 
-    $("#work .openmenu-nav").menuAim({
+    jQuery('.content-tabs').height(jQuery('.content-tabs > .selected').height());
+    jQuery("#work .openmenu-nav").menuAim({
      activate: function(a){
-        var idx = $(a).index();
-        $('#work .openmenu-text > div').eq(idx).show();
+        var idx = jQuery(a).index();
+        jQuery('#work .openmenu-text > div').eq(idx).show();
     },  // fired on row activation
     deactivate: function(a){
-        var idx = $(a).index();
-        $('#work .openmenu-text > div').eq(idx).hide();
+        var idx = jQuery(a).index();
+        jQuery('#work .openmenu-text > div').eq(idx).hide();
     } 
     });
     
-    $("#about .openmenu-nav").menuAim({
+    jQuery("#about .openmenu-nav").menuAim({
      activate: function(a){
-        var idx = $(a).index();
-        $('#about .openmenu-text > div').eq(idx).show();
+        var idx = jQuery(a).index();
+        jQuery('#about .openmenu-text > div').eq(idx).show();
     },  // fired on row activation
     deactivate: function(a){
-        var idx = $(a).index();
-        $('#about .openmenu-text > div').eq(idx).hide();
+        var idx = jQuery(a).index();
+        jQuery('#about .openmenu-text > div').eq(idx).hide();
 
     } 
     });
-    $("#products .openmenu-nav").menuAim({
+    jQuery("#products .openmenu-nav").menuAim({
      activate: function(a){
-        var idx = $(a).index();
-        $('#products .openmenu-text > div').eq(idx).show();
+        var idx = jQuery(a).index();
+        jQuery('#products .openmenu-text > div').eq(idx).show();
     },  // fired on row activation
     deactivate: function(a){
-        var idx = $(a).index();
-        $('#products .openmenu-text > div').eq(idx).hide();
+        var idx = jQuery(a).index();
+        jQuery('#products .openmenu-text > div').eq(idx).hide();
     } 
     });
     
     
-    $('.openmenu-nav li').hover(function(){
-        $('.openmenu-nav li').removeClass('selected');
-        $(this).addClass('selected');
-        $('.openmenu-text > div').removeClass('selected');
-        $('.'+$(this).attr('id')).addClass('selected');
+    jQuery('.openmenu-nav li').hover(function(){
+        jQuery('.openmenu-nav li').removeClass('selected');
+        jQuery(this).addClass('selected');
+        jQuery('.openmenu-text > div').removeClass('selected');
+        jQuery('.'+jQuery(this).attr('id')).addClass('selected');
     });
-   $('nav > li').mouseenter(function(){
-       $('.openmenu-nav li').removeClass('selected');
-       $('.openmenu-text > div').removeClass('selected');
-        $('.openmenu-nav li:nth-child(1) ').addClass('selected');
-        $('.openmenu-text > div:nth-child(1) ').addClass('selected');
+   jQuery('nav > li').mouseenter(function(){
+       jQuery('.openmenu-nav li').removeClass('selected');
+       jQuery('.openmenu-text > div').removeClass('selected');
+        jQuery('.openmenu-nav li:nth-child(1) ').addClass('selected');
+        jQuery('.openmenu-text > div:nth-child(1) ').addClass('selected');
 
    });
     
-    $('.tab-img').click(function(){
-        $('.tab-img').removeClass('selected');
-        $(this).addClass('selected');
-        $('.content-tabs > .content').removeClass('selected');
-        $('.'+$(this).attr('id')).addClass('selected');
-        var tabH = $('.'+$(this).attr('id')).height();
-        $('.content-tabs').animate({height: tabH},300);
+    jQuery('.tab-img').click(function(){
+        jQuery('.tab-img').removeClass('selected');
+        jQuery(this).addClass('selected');
+        jQuery('.content-tabs > .content').removeClass('selected');
+        jQuery('.'+jQuery(this).attr('id')).addClass('selected');
+        var tabH = jQuery('.'+jQuery(this).attr('id')).height();
+        jQuery('.content-tabs').animate({height: tabH},300);
     });
 
     
 });
 
 function jobsDown(){    
-    var ul = $('.job ul').offset();
-    var job = $('.job').offset();
-    var val1 = ul.top+$('.job ul').height();
-    var val2 = job.top+ $('.job').height(); 
+    var ul = jQuery('.job ul').offset();
+    var job = jQuery('.job').offset();
+    var val1 = ul.top+jQuery('.job ul').height();
+    var val2 = job.top+ jQuery('.job').height();
     if (val1 < val2){
-        $('.job ul').animate({top:"0"},700,'easeInOutBack');
+        jQuery('.job ul').animate({top:"0"},700,'easeInOutBack');
     } else {
-        $('.job ul').animate({top:"-=35"},300);
+        jQuery('.job ul').animate({top:"-=35"},300);
     }
     
 } 
