@@ -76,12 +76,12 @@
     margin-top: 20px;
 }
 input.mail{
-    width:40%;
+    width:49%;
     float: left;
     margin-right: 2%;
 }
 input.phone{
-    width:58%;
+    width:49%;
     float: left;
 }
 .send-mail .loadfile input[type="file"]{
@@ -96,6 +96,7 @@ input.phone{
     cursor: pointer;
     float:left;
     height: 30px;
+    position: relative;
 }
 .send-mail .redbutton{
     margin-top:20px;
