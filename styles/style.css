@@ -573,3 +573,7 @@ nav li:hover > a.selected {
 .talk {
     border-left:none;
 }
+
+.no-margin {
+    padding-top: 0px !important;
+}

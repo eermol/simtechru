@@ -134,3 +134,30 @@
     color: #a6a6a6;
 }
 
+
+.mask {
+    width:49%;
+    max-width: 725px;
+    overflow: hidden;
+    height: 280px;
+    position: relative;
+    text-align: center;
+    border:1px solid silver;
+
+}
+.mask img{
+    position: absolute;
+    left:50%;
+    margin-left:-363px;
+    max-width: none !important;
+    height:280px;
+    width: 725px;
+    padding:0px !important;
+}
+
+.image-left .mask {
+    float:right;
+}
+.image-right .mask{
+    float: left;
+}

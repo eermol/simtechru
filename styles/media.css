@@ -149,9 +149,10 @@
     .tabs {
         font-size: 16px;
     }
-    .teamlead{
+    .teamlead, .mask{
         width:100%;
     }
+
     [class*="geotab"]{
         padding: 0px;
     }

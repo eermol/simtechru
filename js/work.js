@@ -27,13 +27,20 @@ jQuery('document').ready(function(){
             itemsTablet:[1150,2],
             itemsMobile:[767,1],
             navigation : true,
-         pagination:false,
+            pagination:false,
             navigationText : ['<i class="bx-prev icon-car-left"></i>','<i class="bx-next icon-car-right"></i>'],
-             rewindNav : true,
-
+            rewindNav : true,
             slideSpeed : 500,
             paginationSpeed : 800,
             rewindSpeed : 500,scrollPerPage : false,
 
      });
+    jQuery('.copy-in-bufer').click(function(){
+
+        jQuery('.animate').addClass('animation').delay(800);
+        setTimeout(function(){
+            jQuery('.animate').removeClass('animation');
+        },500)
+
+    });
 });
