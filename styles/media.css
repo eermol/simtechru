@@ -163,8 +163,8 @@
     .teamlead img, .mask img{
 
         height: auto;
-        max-width: 100%;
-        float:left;
+        max-width: 100% !important;
+        float:none;
         position: static;
         margin:0px;
     }
