@@ -43,8 +43,14 @@ jQuery('document').ready(function(){
         },500);
 
         });
+    jQuery('.send-to-friend').click(function(){
+        jQuery('.opened-dialog').addClass('open-block');
+    });
     jQuery('.copy-in-bufer').zclip({
-            path:'../js/ZeroClipboard.swf',
-            copy:jQuery('.animate').text()
-     });
+                                path:'js/ZeroClipboard.swf',
+                                copy:jQuery('.animate').text()
+    });
+    jQuery('.opened-dialog .close').click(function(){
+        jQuery('.opened-dialog').removeClass('open-block');
+    });
 });
