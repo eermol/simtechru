@@ -40,7 +40,11 @@ jQuery('document').ready(function(){
         jQuery('.animate').addClass('animation').delay(800);
         setTimeout(function(){
             jQuery('.animate').removeClass('animation');
-        },500)
+        },500);
 
-    });
+        });
+    jQuery('.copy-in-bufer').zclip({
+            path:'../js/ZeroClipboard.swf',
+            copy:jQuery('.animate').text()
+     });
 });

@@ -323,3 +323,15 @@ input.phone{
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
+
+.share {
+    width:40px;
+    height:40px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+    margin:0px 5px;
+    margin-top:20px;
+
+
+}
