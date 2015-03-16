@@ -1,5 +1,30 @@
 jQuery('document').ready(function(){
 
+
+   //flash validation
+   var checkIfFlashEnabled = function() {
+   var isFlashEnabled = false;
+   if (typeof(navigator.plugins)!="undefined"
+       && typeof(navigator.plugins["Shockwave Flash"])=="object"
+   ) {
+      isFlashEnabled = true;
+   } else if (typeof  window.ActiveXObject !=  "undefined") {
+      try {
+         if (new ActiveXObject("ShockwaveFlash.ShockwaveFlash")) {
+            isFlashEnabled = true;
+         }
+      } catch(e) {};
+   };
+    return isFlashEnabled;
+    }
+
+
+
+
+
+
+
+
     jQuery('.send-mail input[type="file"]').bind('change', function(){
         if (this.files[0].size > 20000000){
             jQuery('.error').addClass('visible');
@@ -36,21 +61,44 @@ jQuery('document').ready(function(){
 
      });
     jQuery('.copy-in-bufer').click(function(){
-
-        jQuery('.animate').addClass('animation').delay(800);
-        setTimeout(function(){
-            jQuery('.animate').removeClass('animation');
-        },500);
-
+        if (checkIfFlashEnabled() == true ){
+            jQuery('.animate').addClass('animation').delay(800);
+            setTimeout(function(){
+                jQuery('.animate').removeClass('animation');
+            },500);
+        } else {
+            jQuery('.input-friend').addClass('visible');
+            jQuery('.input-friend').focusin(function(){
+                jQuery(this).select();
+            });
+        }
         });
     jQuery('.send-to-friend').click(function(){
-        jQuery('.opened-dialog').addClass('open-block');
+
+            if (jQuery('.opened-dialog').hasClass('open-block')){
+                jQuery('.opened-dialog').removeClass('open-block');
+            } else {
+                jQuery('.opened-dialog').addClass('open-block');
+            }
+
+
     });
-    jQuery('.copy-in-bufer').zclip({
-                                path:'js/ZeroClipboard.swf',
-                                copy:jQuery('.animate').text()
-    });
+
+    if (checkIfFlashEnabled() == true ){
+        jQuery('.copy-in-bufer').zclip({
+                path:'js/ZeroClipboard.swf',
+                copy:jQuery('.animate').text()
+        });
+    }
+
     jQuery('.opened-dialog .close').click(function(){
         jQuery('.opened-dialog').removeClass('open-block');
     });
+
+
+
+
+
+
+
 });

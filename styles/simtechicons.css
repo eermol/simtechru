@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'simtechicons';
-  src: url('../fonts/simtechicons.eot?63431079');
-  src: url('../fonts/simtechicons.eot?63431079#iefix') format('embedded-opentype'),
-       url('../fonts/simtechicons.woff?63431079') format('woff'),
-       url('../fonts/simtechicons.ttf?63431079') format('truetype'),
-       url('../fonts/simtechicons.svg?63431079#simtechicons') format('svg');
+  src: url('../fonts/simtechicons.eot?40710716');
+  src: url('../fonts/simtechicons.eot?40710716#iefix') format('embedded-opentype'),
+       url('../fonts/simtechicons.woff?40710716') format('woff'),
+       url('../fonts/simtechicons.ttf?40710716') format('truetype'),
+       url('../fonts/simtechicons.svg?40710716#simtechicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'simtechicons';
-    src: url('../font/simtechicons.svg?63431079#simtechicons') format('svg');
+    src: url('../font/simtechicons.svg?40710716#simtechicons') format('svg');
   }
 }
 */
@@ -96,3 +96,4 @@
 .icon-check:before { content: '\e82b'; } /* '' */
 .icon-clip:before { content: '\e82c'; } /* '' */
 .icon-close:before { content: '\e82d'; } /* '' */
+.icon-phone:before { content: '\e82f'; } /* '' */

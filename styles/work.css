@@ -281,6 +281,7 @@ input.phone{
     width:100%;
     margin-top:30px;
     cursor: pointer;
+    position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -349,4 +350,25 @@ input.phone{
     height: 30px;
     background: url('../work/job/close.png');
     background-size: 100%;
+}
+
+.phone-number {
+    width:100% !important;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+
+
+
+.input-friend {
+    position: absolute;
+    width:100%;
+    padding:10px;
+    float:left;
+    top:0px;
+    display: none;
 }

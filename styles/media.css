@@ -74,7 +74,7 @@
         margin-left:25px;
         margin-top:45px;
     }
-    .mobile-contacts{display: block;}
+    .mobile-contacts, .mobileshow{display: block;}
     .content{
         font-size: 15px;
     }
@@ -89,12 +89,14 @@
     
 }
 @media screen and (max-width:979px){
+    .info {
+        border:none;
+    }
     .vacancy li{
         width:46%;
     }
-    .info{
-        border:0px;
-        margin-left:6.25%;
+    .slides li{
+        width:auto;
     }
     .content-tabs{
         padding:0px 20px;
@@ -138,6 +140,10 @@
 /*mobile style*/
 
 @media screen and (max-width:767px){
+    .info{
+        border:0px;
+        margin-left:6.25%;
+    }
     .send-mail .mail, .send-mail .phone{
         width:100%;
     }
@@ -151,6 +157,16 @@
     }
     .teamlead, .mask{
         width:100%;
+        height: auto;
+        position: inherit;
+    }
+    .teamlead img, .mask img{
+
+        height: auto;
+        max-width: 100%;
+        float:left;
+        position: static;
+        margin:0px;
     }
 
     [class*="geotab"]{
@@ -250,7 +266,7 @@
     .body .row{
         padding-top:30px;
         padding-bottom: 30px;
-        
+        width:100%;
     }
     
     [class*="col"],[class^=" col"]{
