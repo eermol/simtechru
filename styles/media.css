@@ -64,6 +64,17 @@
 
 
 /*tablet style*/
+
+@media screen and (min-width:1167px){
+    .center-slides .owl-wrapper{
+        width:100% !important;
+        text-align: center;
+    }
+    .center-slides .owl-item{
+        display: inline-block !important;
+        float:none;
+    }
+}
 @media screen and (max-width:1024px){
     .year-slider .tab-img{
         width:130px;

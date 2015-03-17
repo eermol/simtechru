@@ -739,3 +739,13 @@ box-shadow: 0px 0px 0px 2px rgba(223,71,76,1);
 }
 
 
+
+.slide-center {
+    text-align: center;
+}
+.slide-center .owl-item{
+    display: inline-block;
+}
+.slide-center li{
+    display: inline-block;
+}

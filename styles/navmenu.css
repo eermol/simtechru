@@ -76,9 +76,10 @@ nav >li:hover .open-menu{
 .openmenu-description .redbutton{
     float: right;
     margin-right: 20px;
+    line-height: normal;
 }
 .openmenu-description span{
-    padding: 10px;
+    padding: 17px;
     float:left;
 }
 
