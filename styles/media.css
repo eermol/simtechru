@@ -89,6 +89,9 @@
     
 }
 @media screen and (max-width:979px){
+    .talk{
+        margin-bottom: 20px;
+    }
     .info {
         border:none;
     }

@@ -333,7 +333,9 @@ input.phone{
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
-
+.job-tabs .row{
+    margin:0px;
+}
 .share {
     width:40px;
     height:40px;
