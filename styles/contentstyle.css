@@ -94,7 +94,7 @@ a:focus{text-decoration: none;}
 }
 
 p {
-    line-height: 24px;
+    line-height: 1.5em;
     margin:0px;
     padding-bottom: 0.5em;
 }
