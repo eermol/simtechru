@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'simtechicons';
+  src: url('../fonts/simtechicons.eot?40710716');
+  src: url('../fonts/simtechicons.eot?40710716#iefix') format('embedded-opentype'),
+       url('../fonts/simtechicons.woff?40710716') format('woff'),
+       url('../fonts/simtechicons.ttf?40710716') format('truetype'),
+       url('../fonts/simtechicons.svg?40710716#simtechicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'simtechicons';
+    src: url('../font/simtechicons.svg?40710716#simtechicons') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "simtechicons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-photo:before { content: '\e800'; } /* '' */
+.icon-fb:before { content: '\e801'; } /* '' */
+.icon-tweet:before { content: '\e802'; } /* '' */
+.icon-vk:before { content: '\e803'; } /* '' */
+.icon-team:before { content: '\e804'; } /* '' */
+.icon-talk:before { content: '\e805'; } /* '' */
+.icon-stud:before { content: '\e806'; } /* '' */
+.icon-person:before { content: '\e807'; } /* '' */
+.icon-people:before { content: '\e808'; } /* '' */
+.icon-like:before { content: '\e809'; } /* '' */
+.icon-info:before { content: '\e80a'; } /* '' */
+.icon-job:before { content: '\e80b'; } /* '' */
+.icon-inbox:before { content: '\e80c'; } /* '' */
+.icon-globe:before { content: '\e80d'; } /* '' */
+.icon-calendar:before { content: '\e80e'; } /* '' */
+.icon-right-arrow:before { content: '\e80f'; } /* '' */
+.icon-link:before { content: '\e810'; } /* '' */
+.icon-simtech:before { content: '\e811'; } /* '' */
+.icon-down-arrow:before { content: '\e812'; } /* '' */
+.icon-globus:before { content: '\e813'; } /* '' */
+.icon-down-dir:before { content: '\e814'; } /* '' */
+.icon-car-right:before { content: '\e815'; } /* '' */
+.icon-graph:before { content: '\e816'; } /* '' */
+.icon-car-left:before { content: '\e817'; } /* '' */
+.icon-android:before { content: '\e818'; } /* '' */
+.icon-searchinice:before { content: '\e819'; } /* '' */
+.icon-twigmo:before { content: '\e81a'; } /* '' */
+.icon-cscart:before { content: '\e81b'; } /* '' */
+.icon-merchium:before { content: '\e81c'; } /* '' */
+.icon-cubok:before { content: '\e81d'; } /* '' */
+.icon-lan:before { content: '\e81e'; } /* '' */
+.icon-hours:before { content: '\e81f'; } /* '' */
+.icon-simtechdev:before { content: '\e820'; } /* '' */
+.icon-three-people:before { content: '\e821'; } /* '' */
+.icon-devices:before { content: '\e822'; } /* '' */
+.icon-win:before { content: '\e823'; } /* '' */
+.icon-apple:before { content: '\e824'; } /* '' */
+.icon-zero:before { content: '\e825'; } /* '' */
+.icon-shop:before { content: '\e826'; } /* '' */
+.icon-left-arrow:before { content: '\e827'; } /* '' */
+.icon-study2:before { content: '\e828'; } /* '' */
+.icon-search-work:before { content: '\e829'; } /* '' */
+.icon-cup2:before { content: '\e82a'; } /* '' */
+.icon-check:before { content: '\e82b'; } /* '' */
+.icon-clip:before { content: '\e82c'; } /* '' */
+.icon-close:before { content: '\e82d'; } /* '' */
+.icon-phone:before { content: '\e82f'; } /* '' */

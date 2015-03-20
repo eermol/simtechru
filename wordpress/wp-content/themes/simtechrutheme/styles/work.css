@@ -1,0 +1,393 @@
+.tabs {
+    text-align: center;
+    border-bottom:1px solid #d6d6d6;
+    font-size: 18px;
+}
+.tabs .row{
+    padding-top:60px;
+    padding-bottom: 30px;
+
+}
+.tabs a {
+    color:#333;
+
+}
+.tabs a i{
+    color:#333333;
+    font-size: 26px;
+    line-height: 2em;
+}
+.tabs a.selected,.tabs a.selected i{
+    color: #dc2430;
+}
+.vacancy {
+    text-align: center;
+    width:100%;
+    padding: 0px;
+    margin-top:15px;
+    float:left;
+
+}
+.vacancy li{
+    vertical-align: top;
+    display: inline-block;
+    float:none;
+    width:22%;
+    text-align: center;
+    margin:0px 15px;
+    padding: 0px;
+    margin-top: 60px;
+}
+.vacancy li:hover .a-red{
+    text-decoration: underline;
+}
+.vacancy .vacancy-img{
+    width:170px;
+    height: 170px;
+    display: inline-block;
+    background-color:#54a99c;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.vacancy h2{
+    float: left;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    line-height: 1em;
+    padding-top:35px;
+    padding-bottom: 10px;
+    color: #333333;
+
+}
+.vacancy .price{
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: #808080;
+    float: left;
+    width: 100%;
+}
+.vacancy .text{
+    color: #333333;
+}
+.send-mail{
+    margin-top: 20px;
+}
+input.mail{
+    width:49%;
+    float: left;
+    margin-right: 2%;
+}
+input.phone{
+    width:49%;
+    float: left;
+}
+.send-mail .loadfile input[type="file"]{
+    position: absolute;
+    opacity: 0;
+    top:0px;
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+}
+.send-mail .loadfile{
+    cursor: pointer;
+    float:left;
+    height: 30px;
+    position: relative;
+}
+.send-mail .redbutton{
+    margin-top:20px;
+    padding:18px 32px;
+    display: inline-block;
+    float: none;
+}
+.send-mail .error{
+    height: 30px;
+    font-size: 14px;
+    display: none;
+    float:right;
+}
+.send-mail .visible{
+    display: block;
+}
+.send-mail .error i{
+    font-size: 0.7em;
+    margin-top:-5px;
+}
+.teamlead {
+    width:50%;
+    overflow: hidden;
+    height: 280px;
+    text-align: center;
+    position: relative;
+}
+.teamlead img{
+    position: absolute;
+    left:50%;
+    margin-left:-380px;
+    max-width: none !important;
+    float:none;
+
+}
+
+.margin-bot{
+    margin-bottom: 60px;
+}
+.whatnext{
+    text-align: center;
+}
+.selectedfile i{
+    color: #a6a6a6;
+    font-size: 10px;
+}
+
+.filesize {
+    color: #a6a6a6;
+
+}
+
+.selectedfile{
+    display: none;
+    line-height: 2em;
+    height: 30px;
+    float:left;
+}
+.selectedfile i{
+    cursor: pointer;
+}
+.selectedfile img{
+    margin-top:-5px;
+    width: 18px;
+    height: 22px;
+}
+
+.deletefile {
+    display: none;
+    font-size: 10px;
+    color: #a6a6a6;
+    cursor: pointer;
+    padding:10px 5px;
+    float:left;
+}
+
+.about-job h1{
+    padding-bottom: 10px;
+}
+
+.about-job .views {
+    font-size: 15px;
+    color: #808080;
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+.salary {
+    font-size: 16px;;
+    font-weight: 700;
+    width:100%;
+    padding-bottom: 12px;
+}
+.salary .sub{
+    font-size: 13px;
+    font-weight: 400;
+    color: #808080;
+}
+
+
+
+.offer {
+    text-align: center;
+}
+.offer .img{
+    text-align: center;
+    overflow: hidden;
+    width: 170px;
+    height: 170px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top:36px;
+
+}
+.offer .img img{
+    float:right;
+}
+.slides {
+    position: relative;
+}
+.slides li{
+    width:100%;
+    float:left;
+    padding:20px;
+}
+.bx-next,.bx-prev{
+    color:#dc2430;
+    font-size: 20px;
+    position: absolute;
+    top:50%;
+    padding:10px;
+}
+.bx-next{
+    right: -10px;
+}
+.bx-prev{
+    left:-10px;
+}
+
+.send-to-friend {
+    float:left;
+    padding:15px;
+
+    padding-right: 0px;
+    cursor: pointer;
+}
+
+.job-links {
+    font-size: 14px;
+}
+
+.opened-dialog {
+    overflow: hidden;
+    height: 0px;
+    margin-bottom: 50px;
+    background-color: #F2F2F2;
+    position: relative;
+    text-align: center;
+    -webkit-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out;
+}
+.open-block{
+    height: 400px;
+
+}
+.opened-dialog::before{
+    content:'';
+    position:absolute;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #f2f2f2;
+    top:-20px;
+    left:30%;
+}
+.opened-dialog .redbutton{
+    float:none;
+    margin-left: 10px;
+}
+.copy-in-bufer {
+    height:40px;
+    padding-top: 10px;
+    float:left;
+    width:100%;
+    margin-top:30px;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    margin-bottom: 30px;
+}
+
+.text-link .animate {
+    position: absolute;
+    color: #666;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0%, 0);
+    transform: translate3d(0, 0%, 0);
+
+}
+.animation{
+     -webkit-animation-duration: 0.6s;
+      animation-duration: 0.6s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+}
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -130%, 0);
+    transform: translate3d(0, -130%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -130%, 0);
+    -ms-transform: translate3d(0, -130%, 0);
+    transform: translate3d(0, -130%, 0);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+.job-tabs .row{
+    margin:0px;
+}
+.share {
+    width:40px;
+    height:40px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+    margin:0px 5px;
+    margin-top:20px;
+}
+.opened-dialog .close{
+    right:70px;;
+    top:40px;
+    width: 30px;
+    height: 30px;
+    background: url('../work/job/close.png');
+    background-size: 100%;
+}
+
+.phone-number {
+    margin:10px;
+    margin-bottom: 20px;
+    padding:18px 32px;
+    display: inline-block;
+    float:none;
+
+}
+
+
+
+
+
+.input-friend {
+    position: absolute;
+    width:100%;
+    padding:10px;
+    float:left;
+    top:0px;
+    display: none;
+}
+
+.call-us {
+    text-align: center;
+    float:left;
+    width:100%;
+    display: block;
+}
+
+
+.job-links .redbutton{
+    margin-left:0px;
+}
