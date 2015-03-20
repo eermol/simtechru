@@ -3,6 +3,10 @@
     border-bottom:1px solid #d6d6d6;
     font-size: 18px;
 }
+.tabs a{
+    display: inline-block;
+    vertical-align: top;
+}
 .tabs .row{
     padding-top:60px;
     padding-bottom: 30px;
