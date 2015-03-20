@@ -169,6 +169,10 @@
     width:100%;
     text-align: left;
 }
+.social-colors p{
+    float:left;
+    width:100%;
+}
 .social-colors a{
     margin-right: 10px;
     width: 30px;
@@ -178,13 +182,13 @@
 .social-colors a i{
     font-size: 30px;
 }
-.social-colors .icon-vk{
+.colors .icon-vk{
     color: #587DA3
 }
-.social-colors .icon-fb{
+.colors .icon-fb{
     color: #3C5A96;
 }
-.social-colors .icon-tweet{
+.colors .icon-tweet{
     color: #2CBAF0;
 }
 

@@ -82,3 +82,49 @@ input.phone{
     font-size: 0.7em;
     margin-top:-5px;
 }
+
+.contacts h1{
+    margin-top: 70px;
+    position: absolute;
+    z-index: 1;
+    width:100%;
+}
+
+.contact-info {
+    margin-top:150px;
+    margin-left: 50px;
+    background: white;
+    padding:15px 30px;
+    box-shadow: 1px 2px 5px 0.00px rgba(0, 1, 1, 0.3);
+    position: absolute;
+    z-index: 1;
+}
+
+
+.contact-tabs {
+    float:left;
+    width:100%;
+    text-align: center;
+}
+.contact-tabs li {
+    float:left;
+}
+.contact-tabs li span{
+    padding: 14px;
+    float:left;
+    border:1px solid #E3E3E3;
+}
+
+.contact-tabs li span.selected{
+    color: #DC2F3A;
+}
+
+.contact-tabs li:first-child span{
+    border-right:none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.contact-tabs li:last-child span{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
