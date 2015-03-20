@@ -1,6 +1,8 @@
 jQuery('document').ready(function(){
 
 
+
+
    //flash validation
    jQuery('.areuready').click(function(){
        elementClick = jQuery(this).attr("href");
@@ -14,7 +16,21 @@ jQuery('document').ready(function(){
    });
 
 
-
+ var checkIfFlashEnabled = function() {
+       var isFlashEnabled = false;
+       if (typeof(navigator.plugins)!="undefined"
+           && typeof(navigator.plugins["Shockwave Flash"])=="object"
+       ) {
+          isFlashEnabled = true;
+       } else if (typeof  window.ActiveXObject !=  "undefined") {
+          try {
+             if (new ActiveXObject("ShockwaveFlash.ShockwaveFlash")) {
+                isFlashEnabled = true;
+             }
+          } catch(e) {};
+       };
+        return isFlashEnabled;
+}
 
 
 
@@ -56,7 +72,6 @@ jQuery('document').ready(function(){
 
      });
 
-
     jQuery('.copy-in-bufer').click(function(){
         if (checkIfFlashEnabled() == true ){
             jQuery('.animate').addClass('animation').delay(800);
@@ -67,14 +82,35 @@ jQuery('document').ready(function(){
             jQuery('.input-friend').addClass('visible');
             focus('.input-firend');
             jQuery('.input-friend').select();
-
+            jQuery('.opened-dialog').addClass('flash');
         }
-        });
+    });
 
+    $(document).mouseup(function (e) {
+        var container = $(".input-friend");
+        if (container.has(e.target).length === 0){
+            jQuery('.input-friend').removeClass('visible');
+        }
+    });
 
+    jQuery('.send-to-friend').click(function(){
 
+                if (jQuery('.opened-dialog').hasClass('open-block')){
+                    jQuery('.opened-dialog').removeClass('open-block');
+                } else {
+                    jQuery('.opened-dialog').addClass('open-block');
+                }
+    });
 
+        if (checkIfFlashEnabled() == true ){
+            jQuery('.copy-in-bufer').zclip({
+                    path:'js/ZeroClipboard.swf',
+                    copy:jQuery('.animate').text()
+            });
+        }
 
-
-
+        jQuery('.opened-dialog .close').click(function(){
+            jQuery('.opened-dialog').removeClass('open-block');
+    });
 });
+
