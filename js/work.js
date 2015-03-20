@@ -2,21 +2,16 @@ jQuery('document').ready(function(){
 
 
    //flash validation
-   var checkIfFlashEnabled = function() {
-   var isFlashEnabled = false;
-   if (typeof(navigator.plugins)!="undefined"
-       && typeof(navigator.plugins["Shockwave Flash"])=="object"
-   ) {
-      isFlashEnabled = true;
-   } else if (typeof  window.ActiveXObject !=  "undefined") {
-      try {
-         if (new ActiveXObject("ShockwaveFlash.ShockwaveFlash")) {
-            isFlashEnabled = true;
-         }
-      } catch(e) {};
-   };
-    return isFlashEnabled;
-    }
+   jQuery('.areuready').click(function(){
+       elementClick = jQuery(this).attr("href");
+     destination = jQuery(elementClick).offset().top;
+     if(jQuery.browser.safari){
+       jQuery('body').animate( { scrollTop: destination }, 1100 );
+     }else{
+       jQuery('html').animate( { scrollTop: destination }, 1100 );
+     }
+     return false;
+   });
 
 
 
@@ -60,6 +55,8 @@ jQuery('document').ready(function(){
             rewindSpeed : 500,scrollPerPage : false,
 
      });
+
+
     jQuery('.copy-in-bufer').click(function(){
         if (checkIfFlashEnabled() == true ){
             jQuery('.animate').addClass('animation').delay(800);
@@ -68,32 +65,11 @@ jQuery('document').ready(function(){
             },500);
         } else {
             jQuery('.input-friend').addClass('visible');
-            jQuery('.input-friend').focusin(function(){
-                jQuery(this).select();
-            });
+            focus('.input-firend');
+            jQuery('.input-friend').select();
+
         }
         });
-    jQuery('.send-to-friend').click(function(){
-
-            if (jQuery('.opened-dialog').hasClass('open-block')){
-                jQuery('.opened-dialog').removeClass('open-block');
-            } else {
-                jQuery('.opened-dialog').addClass('open-block');
-            }
-
-
-    });
-
-    if (checkIfFlashEnabled() == true ){
-        jQuery('.copy-in-bufer').zclip({
-                path:'js/ZeroClipboard.swf',
-                copy:jQuery('.animate').text()
-        });
-    }
-
-    jQuery('.opened-dialog .close').click(function(){
-        jQuery('.opened-dialog').removeClass('open-block');
-    });
 
 
 

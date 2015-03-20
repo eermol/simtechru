@@ -14,7 +14,7 @@ jQuery(document).ready(function(){
             singleItem:true,
             autoHeight:true,
             navigation : true,
-            navigationText : ['<i class="bx-next icon-car-right"></i>','<i class="bx-prev icon-car-left"></i>'],
+            navigationText : ['<i class="bx-prev icon-car-left"></i>','<i class="bx-next icon-car-right"></i>'],
              rewindNav : true,
             pagination:false,
             slideSpeed : 500,

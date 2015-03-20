@@ -125,11 +125,14 @@ input.phone{
     position: relative;
 }
 .teamlead img{
-    display: inline-block;
+    position: absolute;
+    left:50%;
+    margin-left:-380px;
     max-width: none !important;
     float:none;
 
 }
+
 .margin-bot{
     margin-bottom: 60px;
 }
@@ -238,7 +241,8 @@ input.phone{
 
 .send-to-friend {
     float:left;
-    padding:10px 15px;
+    padding:15px;
+
     padding-right: 0px;
     cursor: pointer;
 }
@@ -383,3 +387,7 @@ input.phone{
     display: block;
 }
 
+
+.job-links .redbutton{
+    margin-left:0px;
+}

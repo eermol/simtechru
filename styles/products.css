@@ -36,6 +36,7 @@
 }
 
 .product-tabs-out {
+    overflow: hidden;
     float:left;
     width:100%;
     padding-top: 40px;

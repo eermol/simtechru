@@ -20,6 +20,7 @@ h4{
     margin:0px;
     padding-bottom: 1em;
 }
+img{height: auto;}
 a:focus{text-decoration: none;}
 .a-red{color:#dc2430; text-decoration: none;}
 .a-red:hover{text-decoration: underline;}
